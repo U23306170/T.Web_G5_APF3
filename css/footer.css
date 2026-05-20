@@ -1,0 +1,37 @@
+footer {
+
+    tr,
+    th {
+        padding: 2px;
+    }
+
+    table {
+        text-align: center;
+        width: 100%;
+        margin: 0.5rem auto;
+    }
+
+    thead tr {
+        background-color: yellow;
+    }
+
+    table,
+    td,
+    th,
+    tr {
+        border: 2px solid red;
+    }
+
+    tbody tr:hover {
+        background-color: rgb(2, 145, 155);
+    }
+
+    tbody {
+        tr {
+            td {
+
+                background-color: rgb(172, 114, 7);
+            }
+        }
+    }
+}

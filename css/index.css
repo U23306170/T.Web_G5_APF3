@@ -1,0 +1,105 @@
+.contenedor-principal {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.hero-section {
+    border: thin solid rgb(235, 221, 26);
+    border-radius: 15px;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: white;
+}
+
+.hero-legend {
+    background-color: yellow;
+    border-radius: 15px;
+    padding: 5px 20px;
+}
+
+.hero-legend h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.hero-section p {
+    margin: 1rem 0;
+}
+
+.btn-carta {
+    background-color: yellow;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    box-shadow: 5px 5px red;
+    border: none;
+    cursor: pointer;
+    transition: all 1.5s;
+}
+
+.btn-carta:hover {
+    background-color: rgb(238, 255, 0);
+    translate: 5px 5px;
+    box-shadow: none;
+}
+
+
+.platos-section {
+    border: thin solid rgb(26, 117, 235);
+    border-radius: 15px;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: white;
+}
+
+.platos-legend {
+    background-color: rgb(82, 108, 255);
+    border-radius: 15px;
+    padding: 5px 20px;
+}
+
+.platos-legend h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 1rem;
+}
+
+.tarjeta-plato {
+    width: 30%;
+    min-width: 280px;
+    max-width: 350px;
+    border: 2px solid red;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.tarjeta-plato img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border: thin solid rgb(0, 255, 98);
+    margin-bottom: 10px;
+}
+
+.tarjeta-plato h3 {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+.tarjeta-plato p {
+    font-size: 0.85rem;
+    margin: 0;
+}

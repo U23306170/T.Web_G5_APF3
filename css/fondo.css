@@ -1,0 +1,24 @@
+
+    body {
+        background-image: url("/img/fondo2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+     /* capa oscura */
+    overlay {
+        background-color: rgba(0, 0, 0, 0.5); /* negro transparente */
+        min-height: 100%;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+    }
+    /*imagen*/
+    .imagen {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 10px;
+        margin: 20px auto;
+        display: block;
+    }
