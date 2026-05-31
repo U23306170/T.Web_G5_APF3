@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Comida Peruana</title>
+    <title>Nuestro Catálogo</title>
     <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/fondo.css">
+    <link rel="stylesheet" href="css/fondo.css">
+    <link rel="stylesheet" href="css/nuestro-catalogo.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-    <div class="overlay"></div>
-    <header>
+  <header>
         <h3 style="color: white;">Restaurant Comida Peruana</h3>
         <nav style="text-align: end;">
             <a href="index.html">Inicio</a>
@@ -23,29 +21,51 @@
             <hr>
         </nav>
     </header>
-    <form action="index.html">
-        <fieldset>
-            <legend>
-                <h3>Inicio de sesión</h3>
-            </legend>
-            <div style="text-align: start;">
-                <label for="usuario">Usuario</label>
-                <input type="text" id="usuario">
+
+    <main class="contenedor-principal">
+        <fieldset class="fieldset-catalogo">
+            <legend class="legend-catalogo">Nuestros Platos Típicos</legend>
+            
+            <div class="grid-catalogo">
+                <article class="tarjeta-plato">
+                    <h3>Ceviche Peruano</h3>
+                    <p>Pescado fresco del día curtido en limón, acompañado de choclo, camote glaseado, canchita y un toque de ají limo.</p>
+                    <p class="precio">S/ 35.00</p>
+                </article>
+
+                <article class="tarjeta-plato">
+                    <h3>Lomo Saltado</h3>
+                    <p>Jugosos trozos de lomo fino salteados al wok con cebolla, tomate y sillao. Servido con crujientes papas fritas y arroz.</p>
+                    <p class="precio">S/ 38.00</p>
+                </article>
+
+                <article class="tarjeta-plato">
+                    <h3>Causa Limeña</h3>
+                    <p>Suave masa de papa amarilla peruana sazonada con ají y limón, rellena de pechuga de pollo, mayonesa y palta.</p>
+                    <p class="precio">S/ 22.00</p>
+                </article>
+
+                <article class="tarjeta-plato">
+                    <h3>Ají de Gallina</h3>
+                    <p>Clásico plato limeño a base de crema de ají amarillo, pan y nueces, con pechuga de gallina deshilachada. Servido con arroz.</p>
+                    <p class="precio">S/ 28.00</p>
+                </article>
+
+                <article class="tarjeta-plato">
+                    <h3>Anticuchos de Corazón</h3>
+                    <p>Brochetas de corazón de res marinadas en ají panca, asadas a la parrilla con papas doradas y choclo tierno.</p>
+                    <p class="precio">S/ 26.00</p>
+                </article>
+
+                <article class="tarjeta-plato">
+                    <h3>Pisco Sour</h3>
+                    <p>El cóctel bandera del Perú. Deliciosa mezcla de pisco quebranta, jugo de limón recién exprimido, jarabe de goma y clara de huevo.</p>
+                    <p class="precio">S/ 18.00</p>
+                </article>
             </div>
-            <div style="text-align: start;">
-                <label for="correo">Correo</label>
-                <input type="email" id="Correo">
-            </div>
-            <div style="text-align: start;">
-                <label for="clave">Contraseña</label>
-                <input type="password" id="clave">
-            </div>
-            <button >Acceder</button>
         </fieldset>
-    </form>
+    </main>
 
-
-    
     <footer>
         <hr>
         <table>
@@ -57,17 +77,13 @@
 
                     <th colspan="2">
                         <div>
-                            <h3>
-                                Siguenos en:
-                            </h3>
+                            <h3>Siguenos en:</h3>
                             <a href=" https://facebook.com" target="_blank">
                                 <img src="/img/image-tiktok.png" alt="Tiktok" width="20">
                             </a>
-
                             <a href="https://facebook.com" target="_blank">
                                 <img src="/img/image-facebook.png" alt="Instagram" width="20">
                             </a>
-
                             <a href="https://facebook.com" target="_blank">
                                 <img src="/img/image.png" alt="Facebook" width="20">
                             </a>
@@ -78,15 +94,9 @@
 
             <tbody>
                 <tr>
-                    <td>
-                        <h4>Servicio al Cliente</h4>
-                    </td>
-                    <td>
-                        <h4>Sobre Comida Peruana</h4>
-                    </td>
-                    <td>
-                        <h4>Ayuda y legales</h4>
-                    </td>
+                    <td><h4>Servicio al Cliente</h4></td>
+                    <td><h4>Sobre Comida Peruana</h4></td>
+                    <td><h4>Ayuda y legales</h4></td>
                 </tr>
                 <tr>
                     <td>
@@ -96,7 +106,6 @@
                             <li>transferencias</li>
                             <li>Libro de reclamaciones</li>
                         </ul>
-                       
                     </td>
                     <td>
                         <ul style="text-align: start;">
@@ -105,7 +114,6 @@
                             <li>Locales</li>
                             <li>Trabaja con nosotro</li>
                         </ul>
-                        
                     </td>
                     <td>
                         <ul style="text-align: start;">
@@ -120,5 +128,4 @@
         </table>
     </footer>
 </body>
-
 </html>

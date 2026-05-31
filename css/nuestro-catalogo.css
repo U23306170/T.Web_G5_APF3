@@ -1,0 +1,90 @@
+.contenedor-principal {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    
+    
+    animation: fadeInAscendente 1.2s ease-out forwards;
+}
+
+@keyframes fadeInAscendente {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.fieldset-catalogo {
+    background-color: white;
+    border: thin solid rgb(26, 117, 235);
+    border-radius: 15px;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.legend-catalogo {
+    background-color: rgb(82, 108, 255);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+
+.grid-catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 15px;
+}
+
+
+.tarjeta-plato {
+    background-color: white;
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+   
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.tarjeta-plato h3 {
+    margin-top: 0;
+    color: rgb(26, 117, 235);
+}
+
+.tarjeta-plato p {
+    color: #444444;
+    line-height: 1.5;
+    font-size: 0.95em;
+}
+
+.tarjeta-plato .precio {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: red;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+
+.tarjeta-plato:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px rgb(238, 255, 0);
+}
+
+
+@media (max-width: 768px) {
+    .grid-catalogo {
+        grid-template-columns: 1fr;
+    }
+}
