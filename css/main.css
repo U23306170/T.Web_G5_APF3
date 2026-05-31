@@ -19,6 +19,13 @@ form {
     margin: 0 auto;
 
     fieldset {
+        /*APLICACION DE FLEXBOX PARA ALINEAR LOS IMPUT Y BUTTON EN COLUMNA*/
+        
+        display: flex;
+        flex-direction: column;
+        gap: 0.4em;
+        justify-content: center;
+        padding: 0.8em;
         background: white;
         width: 100%;
         border: thin solid rgb(235, 221, 26);
@@ -54,11 +61,12 @@ form {
         button {
             font-size: 1rem;
             box-shadow: 5px 5px red;
+            /*APLICACION CORRECTA DE TRANSICION EN LOS BOTONES USANDO Transition-property y transition-duration*/
             transition-property: all;
             transition-duration: 1.5s;
 
             &:hover {
-                background-color: rgb(238, 255, 0);
+                background-color: rgb(238, 255, 2);
                 cursor: pointer;
                 translate: 5px 5px;
                 box-shadow: none;

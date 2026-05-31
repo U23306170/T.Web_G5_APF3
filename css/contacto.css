@@ -3,20 +3,23 @@
 }
 
 
-form {
+form.formulario {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-
+    
     fieldset {
-        background: white;
-        border: 2px solid #1a75eb;
+        /*APLICACION DE FLEXBOX PARA ALINEAR LOS IMPUT Y BUTTON EN COLUMNA*/
+        display: flex;
+        flex-direction: column;
+        gap: 0.4em;
+        justify-content: center;
+        padding: 0.8em;
+        height: 120dvh;
+        background-color: aqua;
+        align-items: center;
         border-radius: 15px;
-        padding: 20px;
-        width: 100%;
-
         label {
-            display: block;
             text-align: start;
             margin: 1rem;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -25,11 +28,9 @@ form {
         input {
             width: 100%;
             border: thin solid rgb(11, 255, 222);
-            margin-bottom: 2rem;
         }
 
         button {
-            margin: 1rem auto;
             border-radius: 10px;
         }
 
@@ -42,11 +43,12 @@ form {
         button {
             font-size: 1rem;
             box-shadow: 5px 5px rgb(0, 0, 0);
+            /*APLICACION CORRECTA DE TRANSICION EN LOS BOTONES USANDO Transition-property y transition-duration*/
             transition-property: all;
             transition-duration: 1.5s;
 
             &:hover {
-                background-color: rgb(54, 152, 197);
+                background-color: rgb(243, 247, 248);
                 cursor: pointer;
                 translate: 5px 5px;
                 box-shadow: none;
@@ -56,7 +58,6 @@ form {
         input,
         textarea {
             width: 100%;
-            margin-bottom: 15px;
             padding: 10px;
         }
 
@@ -100,5 +101,5 @@ tr {
 }
 
 tbody tr:hover {
-    background-color: rgb(2, 145, 155);
+    background-color: rgb(167, 255, 2);
 }
