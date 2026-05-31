@@ -102,7 +102,7 @@
     color: rgb(177, 174, 0);
     margin-top: 0;
 }
-
+/*APLICACION DE MEDIA QUERY PARA LOS BLOQUES EN COLUMMNA*/
 @media (max-width: 768px) {
     .grid-nosotros {
         grid-template-columns: 1fr;
@@ -117,7 +117,7 @@
         width: 100%;
     }
 }
-
+/*APLICACION DE ANIMACION AL ABRIR EL KFRAME*/
 @keyframes aparecerArriba {
     0% {
         opacity: 0;
