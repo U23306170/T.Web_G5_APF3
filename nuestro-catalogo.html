@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,60 +12,69 @@
     <link rel="stylesheet" href="css/header.css">
     <script src="js/menuResponsivo.js" defer></script>
 </head>
+
 <body>
-  <header>
+    <header>
         <nav>
             <h3 class="nav-title">Restaurant Comida Peruana</h3>
 
-            <a href="index.html">Inicio</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="login.html">Iniciar sesión</a>
-            <a href="sobre-nosotros.html">Sobre nosotros</a>
-            <a href="nuestro-catalogo.html">Catalogo</a>
-            <a href="intranet.html">Intranet</a>
-            <hr>
+            <button class="boton-menu" aria-expanded="false">☰</button>
 
+            <div class="menu-principal">
+                <a href="index.html" class="item">Inicio</a>
+                <a href="contacto.html" class="item">Contacto</a>
+                <a href="login.html" class="item">Iniciar sesión</a>
+                <a href="sobre-nosotros.html" class="item">Sobre nosotros</a>
+                <a href="nuestro-catalogo.html" class="item">Catalogo</a>
+                <a href="intranet.html" class="item">Intranet</a>
+            </div>
         </nav>
     </header>
 
     <main class="contenedor-principal">
         <fieldset class="fieldset-catalogo">
             <legend class="legend-catalogo">Nuestros Platos Típicos</legend>
-            
+
             <div class="grid-catalogo">
                 <article class="tarjeta-plato">
                     <h3>Ceviche Peruano</h3>
-                    <p>Pescado fresco del día curtido en limón, acompañado de choclo, camote glaseado, canchita y un toque de ají limo.</p>
+                    <p>Pescado fresco del día curtido en limón, acompañado de choclo, camote glaseado, canchita y un
+                        toque de ají limo.</p>
                     <p class="precio">S/ 35.00</p>
                 </article>
 
                 <article class="tarjeta-plato">
                     <h3>Lomo Saltado</h3>
-                    <p>Jugosos trozos de lomo fino salteados al wok con cebolla, tomate y sillao. Servido con crujientes papas fritas y arroz.</p>
+                    <p>Jugosos trozos de lomo fino salteados al wok con cebolla, tomate y sillao. Servido con crujientes
+                        papas fritas y arroz.</p>
                     <p class="precio">S/ 38.00</p>
                 </article>
 
                 <article class="tarjeta-plato">
                     <h3>Causa Limeña</h3>
-                    <p>Suave masa de papa amarilla peruana sazonada con ají y limón, rellena de pechuga de pollo, mayonesa y palta.</p>
+                    <p>Suave masa de papa amarilla peruana sazonada con ají y limón, rellena de pechuga de pollo,
+                        mayonesa y palta.</p>
                     <p class="precio">S/ 22.00</p>
                 </article>
 
                 <article class="tarjeta-plato">
                     <h3>Ají de Gallina</h3>
-                    <p>Clásico plato limeño a base de crema de ají amarillo, pan y nueces, con pechuga de gallina deshilachada. Servido con arroz.</p>
+                    <p>Clásico plato limeño a base de crema de ají amarillo, pan y nueces, con pechuga de gallina
+                        deshilachada. Servido con arroz.</p>
                     <p class="precio">S/ 28.00</p>
                 </article>
 
                 <article class="tarjeta-plato">
                     <h3>Anticuchos de Corazón</h3>
-                    <p>Brochetas de corazón de res marinadas en ají panca, asadas a la parrilla con papas doradas y choclo tierno.</p>
+                    <p>Brochetas de corazón de res marinadas en ají panca, asadas a la parrilla con papas doradas y
+                        choclo tierno.</p>
                     <p class="precio">S/ 26.00</p>
                 </article>
 
                 <article class="tarjeta-plato">
                     <h3>Pisco Sour</h3>
-                    <p>El cóctel bandera del Perú. Deliciosa mezcla de pisco quebranta, jugo de limón recién exprimido, jarabe de goma y clara de huevo.</p>
+                    <p>El cóctel bandera del Perú. Deliciosa mezcla de pisco quebranta, jugo de limón recién exprimido,
+                        jarabe de goma y clara de huevo.</p>
                     <p class="precio">S/ 18.00</p>
                 </article>
             </div>
@@ -99,9 +109,15 @@
 
             <tbody>
                 <tr>
-                    <td><h4>Servicio al Cliente</h4></td>
-                    <td><h4>Sobre Comida Peruana</h4></td>
-                    <td><h4>Ayuda y legales</h4></td>
+                    <td>
+                        <h4>Servicio al Cliente</h4>
+                    </td>
+                    <td>
+                        <h4>Sobre Comida Peruana</h4>
+                    </td>
+                    <td>
+                        <h4>Ayuda y legales</h4>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -133,4 +149,5 @@
         </table>
     </footer>
 </body>
+
 </html>

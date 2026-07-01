@@ -1,40 +1,56 @@
 header {
-    /* Le damos el fondo gold al nav para que todo el menú sea uniforme */
     nav {
         display: flex;
         flex-direction: column;
         background-color: gold; 
-        
+        position: relative; /* Para posicionar elementos internamente si es necesario */
     }
 
     h3.nav-title {
         text-align: center;
         font-size: 1.5rem;
         padding: 1rem;
-        margin: 0; /* 1. ELIMINA el espacio en blanco exterior */
-        background-color: rgb(0, 132, 255); /* 2. El color que quieras para TODA la casilla */
+        margin: 0; 
+        background-color: rgb(0, 132, 255); 
         color: white; 
     }
 
-    nav button {
+    /* Estilos del botón hamburguesa */
+    nav button.boton-menu {
         border: none;
         padding: 1rem;
-        font-size: 1.4rem;
-        position: fixed;
+        font-size: 1.6rem;
+        position: absolute; /* Cambiado de fixed a absolute para que no se mueva al hacer scroll */
         top: 0;
         right: 0;
-        background-color: transparent; /* Para que no tape el fondo */
+        background-color: transparent; 
+        color: white; /* Para que resalte sobre el azul del h3 */
         z-index: 10;
 
         &:hover {
-            background-color: azure;
+            background-color: rgba(255, 255, 255, 0.2);
             cursor: pointer;
+        }
+    }
+
+    /* Ocultamos el contenedor de enlaces en móvil por defecto */
+    .menu-principal {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Cuando JS activa el menú en móvil, se muestra y sus enlaces se hacen visibles */
+    .menu-principal.menu-activo {
+        display: flex;
+        
+        a.item {
+            display: block; /* Muestra los enlaces uno debajo del otro */
         }
     }
 
     a {
         padding: 1rem .2rem;
-        flex: 1;
         text-align: center;
         font-size: 1.4rem;
         color: black;
@@ -46,38 +62,37 @@ header {
         color: gold;
     }
 
-    a.item {
-        display: none;
-    }
-
-    a.item.visible {
-        display: initial;
-    }
-
-    /* --- VISTA DE ESCRITORIO --- */
+    /* --- VISTA DE ESCRITORIO (800px o más) --- */
     @media screen and (min-width: 800px) {
         nav {
             flex-direction: row;
-            align-items: center; /* Centra verticalmente el h3 y los enlaces */
-            justify-content: space-between; /* Empuja el título a la izquierda y enlaces a la derecha */
-            padding: 0; /* Espaciado a los lados del menú */
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 0; 
 
             h3.nav-title {
                 text-align: left;
-                padding: 1rem 2rem; /* Le damos espacio interno a los lados del texto */
+                padding: 1rem 2rem; 
                 margin-right: auto; 
-                align-self: stretch; /* 3. HACE QUE OCUPE TODO EL ALTO de la barra */
+                align-self: stretch; 
                 display: flex;
-                align-items: center; /* Centra el texto verticalmente dentro de su casilla */
+                align-items: center; 
             }
 
-            a.item {
-                display: initial;
-                flex: none; /* Quitamos flex: 1 en escritorio para que los enlaces no se estiren gigantezcos */
-                padding: 1rem 1.5rem; /* Más espacio horizontal entre botones */
+            /* Forzamos a que el menú se muestre siempre horizontalmente en escritorio */
+            .menu-principal {
+                display: flex !important; 
+                flex-direction: row;
+                width: auto;
+
+                a.item {
+                    display: initial;
+                    padding: 1rem 1.5rem; 
+                }
             }
 
-            button {
+            /* Ocultamos el botón hamburguesa permanentemente en pantallas grandes */
+            button.boton-menu {
                 display: none;
             }
         }
