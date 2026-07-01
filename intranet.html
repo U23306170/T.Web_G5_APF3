@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/fondo.css">
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="css/intranet.css">
+    <script src="js/menuResponsivo.js" defer></script>
+    <script src="js/cierreSesion.js" defer></script>
 </head>
 
 <body>
@@ -27,9 +30,29 @@
 
         </nav>
     </header>
-
-
-
+    <main class="contenedor-principal">
+        <fieldset class="panel-intranet">
+            <legend class="intranet-legend">
+                <h2>Intranet Administrativa</h2>
+            </legend>
+            <section class="resumen-intranet">
+                <article>
+                    <h3>Pedidos del día</h3>
+                    <p>18 solicitudes registradas</p>
+                </article>
+                <article>
+                    <h3>Reservas activas</h3>
+                    <p>7 mesas programadas</p>
+                </article>
+                <article>
+                    <h3>Mensajes recibidos</h3>
+                    <p>5 consultas pendientes</p>
+                </article>
+            </section>
+            <button class="btn-cierre" type="button" id="boton-cierre-sesion" onclick="cerrarSesion()">Cierre de
+                sesión</button>
+        </fieldset>
+    </main>
     <footer>
         <hr>
         <table>
